@@ -38,7 +38,7 @@ public class MUserController {
     public Result index() {
 //        log.info(String.valueOf(IMUserService.getById(1L)));
         MUser user = IMUserService.getById(1L);
-        return Result.succ(200,"操作成功",user);
+        return Result.succ(200,"操作成功success",user);
     }
 
 }
