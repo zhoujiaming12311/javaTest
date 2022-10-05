@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/vueblog
+    username: root
+mybatis-plus:
+  mapper-loactions: classpath*:/mapper/**Mapper.xml
+server:
+  port: 8081
+shiro-redis:
+  enabled: true;
+redis-manager:
+  host: 127.0.0.1:6379
+markerhub:
+  jwt:
+    secret: f4e2e52034348f86b67cde581c0f9eb5 #加密密钥
+    expire: 604800 #tkoen有效时间：7天 时分秒
+    header: Authorization
